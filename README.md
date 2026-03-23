@@ -1,11 +1,24 @@
-# Lottery API
+# Lottery API – Spring Boot, CSV Ingestion, and Analytics
 
-Spring Boot API for ingesting and serving lottery draw data.
+A backend application built with Spring Boot that ingests historical lottery data from a CSV file, stores it in an H2 database, and exposes RESTful API endpoints to query lottery draws. Designed to demonstrate backend engineering skills, data ingestion pipelines, and API development in a professional, testable way.
 
-## Features
-- Upload lottery CSV (`lottery.csv`) via REST endpoint
-- View all lottery draws
-- H2 in-memory database for fast setup
+## Key Features:
+
+- CSV ingestion pipeline directly from resources/data/lottery.csv
+- H2 in-memory database for fast, local testing
+- REST endpoints for retrieving lottery draws and statistics
+- Clean, modular service, repository, and controller layers
+- Easily extensible for analytics or integration with dashboards
+
+## Tech Stack:
+
+- Java 17 + Spring Boot 4.x
+- Spring Data JPA / H2 Database
+- REST API
+- Maven build and dependency management
+
+## Purpose:
+Showcases ability to design production-ready APIs, and handle data ingestion.
 
 ## Project Structure
 ```
